@@ -6,14 +6,14 @@
 /*   By: tmolinar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/17 15:28:51 by tmolinar          #+#    #+#             */
-/*   Updated: 2018/09/17 15:29:18 by tmolinar         ###   ########.fr       */
+/*   Updated: 2018/09/18 16:30:14 by tmolinar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_OPP_H
 # define FT_OPP_H
 
-ft_opp g_opptab[] =
+t_opp g_opptab[] =
 {
 	{"+", &ft_add},
 	{"-", &ft_sub},
