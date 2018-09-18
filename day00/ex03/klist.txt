@@ -1,0 +1,8 @@
+Credentials cache: API:CB025C63-9A85-438D-B3F9-F43683099D3C
+        Principal: tmolinar@42.FR
+
+  Issued                Expires               Principal
+Aug 29 10:26:35 2018  Sep  5 10:26:35 2018  krbtgt/42.FR@42.FR
+Aug 29 10:26:37 2018  Sep  5 10:26:35 2018  ldap/ldap-proxy.42.fr@42.FR
+Aug 29 10:26:37 2018  Sep  5 10:26:35 2018  HTTP/student-storage-1.42.fr@42.FR
+Aug 29 10:28:36 2018  Sep  5 10:26:35 2018  host/vgs-fn1.42.fr@42.FR
