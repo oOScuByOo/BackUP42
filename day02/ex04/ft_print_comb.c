@@ -6,7 +6,7 @@
 /*   By: tmolinar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/31 22:52:11 by tmolinar          #+#    #+#             */
-/*   Updated: 2018/09/04 11:42:10 by tmolinar         ###   ########.fr       */
+/*   Updated: 2018/09/05 14:26:21 by tmolinar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ void		ft_print_comb(void)
 				ft_putchar(number[2]);
 				if (!(number[0] == '7' && number[1] == '8' && number[2] == '9'))
 				{
-					ft_putchar(' ');
 					ft_putchar(',');
+					ft_putchar(' ');
 				}
 				number[2]++;
 			}

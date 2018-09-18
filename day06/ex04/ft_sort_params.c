@@ -6,11 +6,16 @@
 /*   By: tmolinar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/08 22:04:44 by tmolinar          #+#    #+#             */
-/*   Updated: 2018/09/13 13:54:34 by tmolinar         ###   ########.fr       */
+/*   Updated: 2018/09/16 17:04:15 by tmolinar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void		ft_putchar(char c);
+#include <unistd.h>
+
+void		ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void		putstr(char *str)
 {
