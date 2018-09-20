@@ -6,13 +6,13 @@
 /*   By: tmolinar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/12 14:27:27 by tmolinar          #+#    #+#             */
-/*   Updated: 2018/09/17 16:10:44 by tmolinar         ###   ########.fr       */
+/*   Updated: 2018/09/19 13:20:33 by tmolinar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int		ft_strlen(char *s)
+int			ft_strlen(char *s)
 {
 	int i;
 
@@ -22,7 +22,7 @@ int		ft_strlen(char *s)
 	return (i);
 }
 
-int		ft_str_len_max(int argc, char **argv)
+int			ft_str_len_max(int argc, char **argv)
 {
 	int count;
 	int i;
@@ -39,11 +39,11 @@ int		ft_str_len_max(int argc, char **argv)
 
 char		*ft_concat_params(int argc, char **argv)
 {
-	char *res;
-	int total;
-	int i;
-	int y;
-	int c;
+	char	*res;
+	int		total;
+	int		i;
+	int		y;
+	int		c;
 
 	total = ft_str_len_max(argc, argv) + argc;
 	res = (char*)malloc(sizeof(*res) * total);

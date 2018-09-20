@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_range2.c                               :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmolinar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/18 12:41:23 by tmolinar          #+#    #+#             */
-/*   Updated: 2018/09/18 12:42:05 by tmolinar         ###   ########.fr       */
+/*   Created: 2018/09/20 19:11:37 by tmolinar          #+#    #+#             */
+/*   Updated: 2018/09/20 19:40:57 by tmolinar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,23 @@
 
 int		ft_ultimate_range(int **range, int min, int max)
 {
-	int *output;
 	int i;
+	int size;
 
-	if (max - min <= 0 || (output = malloc(sizeof(int) * (max - min))) == NULL)
+	size = max - min;
+	if (min >= max)
+	{
+		*range = 0;
+		return (0);
+	}
+	if (!(*range = (int*)malloc(sizeof(int) * size)))
 		return (0);
 	i = 0;
-	while (i < max - min)
+	while (min < max)
 	{
-		output[i] = min + i;
+		range[0][i] = min;
 		i++;
+		min++;
 	}
-	*range = output;
-	return (max - min);
+	return (size);
 }

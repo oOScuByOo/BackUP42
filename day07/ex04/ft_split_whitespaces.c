@@ -6,21 +6,21 @@
 /*   By: tmolinar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 15:26:49 by tmolinar          #+#    #+#             */
-/*   Updated: 2018/09/17 21:28:18 by tmolinar         ###   ########.fr       */
+/*   Updated: 2018/09/19 13:20:44 by tmolinar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int		ft_is_whitespace(char c)
+int			ft_is_whitespace(char c)
 {
-	if ( c == '\t' || c == '\n' || c == ' ')
+	if (c == '\t' || c == '\n' || c == ' ')
 		return (1);
 	else
 		return (0);
 }
 
-int		ft_word_count(char *str)
+int			ft_word_count(char *str)
 {
 	int i;
 	int lycos;
@@ -51,7 +51,7 @@ char		**ft_allocate_memory(char *str, int word_count, int i, int j)
 {
 	char **arr;
 
-	arr = (char**)malloc(sizeof(char*) * (word_count +1));
+	arr = (char**)malloc(sizeof(char*) * (word_count + 1));
 	if (*str == '\0' && ((arr[0] = 0) || 1))
 		return (arr);
 	while (ft_is_whitespace(*str))
@@ -78,10 +78,10 @@ char		**ft_allocate_memory(char *str, int word_count, int i, int j)
 
 char		**ft_split_whitespaces(char *str)
 {
-	int i;
-	int j;
-	int word_count;
-	char **arr;
+	int		i;
+	int		j;
+	int		word_count;
+	char	**arr;
 
 	i = 0;
 	j = 0;
@@ -94,7 +94,7 @@ char		**ft_split_whitespaces(char *str)
 			while (ft_is_whitespace(*str))
 				str++;
 			arr[i][j] = '\0';
-			i += (j !=0) ? 1 : 0;
+			i += (j != 0) ? 1 : 0;
 			j = 0;
 		}
 		else
